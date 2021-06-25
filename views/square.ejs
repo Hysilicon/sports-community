@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>List</title>
+  <link rel='stylesheet' href='../public/stylesheets/style.css' />
+</head>
+
+<body>
+
+  <h1 style="border-bottom: 1px solid #ccc; padding-bottom: 10px;">List</h1>
+  <ul>
+    <% data.forEach((article)=> { %>
+      <li>
+        <a href="/article/<%=article.id %>">
+          <%= article.title %>
+        </a>
+      </li>
+
+      <p>Created time: <%= article.createtime %>
+      </p>
+      <p><%= article.content %>
+      </p>
+
+
+      <% }) %>
+  </ul>
+  <form action='/' method='get'>
+    <input type="submit" value='Back'>
+  </form>
+
+</body>
+
+</html>

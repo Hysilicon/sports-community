@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>edit</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+<h1>EDIT</h1>
+<p>Fill in the form below to change private information!</p>
+
+<% if(typeof(image) !== 'undefined' && image){ %>
+    <img src="<%=image%>">
+  <%}else{%>
+    <p>暂无图片</p>
+    <% } %>
+
+<form action="/users/my/avatar" enctype="multipart/form-data" method="post">
+    <input type="file" name="image">
+    <input type="submit" value="上传">
+  </form> 
+
+<form action='/users/my/nick' method='post'>
+    <p><%=nick%></p>
+    New: <input type='text' name='nick' />
+    <input type='submit' value='change'/>
+</form>
+
+<form action='/users/my/sign' method='post'>
+        <p><%=signi%></p>
+        New: <input type='text' name='signi' />
+        <input type='submit' value='change'/>
+</form>
+
+</body>
+</html>

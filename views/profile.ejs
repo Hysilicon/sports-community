@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>profile</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%=username%></h1>
+    <% if(typeof(image) !== 'undefined' && image){ %>
+      <img src="<%=image%>">
+    <%}%> 
+    <p><%=nick%></p>
+    <p><%=signi%></p>
+    <form action = '/users/logout' method = 'get'>
+      <input type="submit" value = 'logout'>
+      </form>
+ 
+
+    
+  
+  </body>

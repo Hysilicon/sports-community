@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create new article</title>
+    <style type="text/css">
+        body {
+            margin: 0 20px;
+            line-height: 1;
+        }
+        a {
+            text-decoration-line: none;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1 style="border-bottom: 1px solid #ccc; padding-bottom: 10px;">new article</h1>
+    <div>
+        <div class="content-wrapper">
+            <form id = 'create' name = 'input' action = '/article/create' method = 'post'>
+                title : <input type = 'text' name = 'title'>
+                content:<textarea name="content"> 
+                   
+                </textarea>  
+        
+            <input type="submit" value = 'Submit!'>
+                </form>
+        </div>
+    </div>
+
+</body>
+</html>
