@@ -1,7 +1,7 @@
 let mysql_config = {
     host: 'localhost',
     user: 'root',
-    password:'Lu13579@',
+    password:'',
     port:'3306',
     database:'202-community'
 }
